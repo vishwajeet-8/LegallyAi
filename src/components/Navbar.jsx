@@ -1,20 +1,33 @@
-import legallyImg from "../assets/legally.png";
+import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="bg-linear-65 from-orange-500 to-yellow-200 pb-[3px] shadow-xl shadow-black-500/50">
-      <div className="flex justify-between align-center p-4 bg-white">
-        <img src={legallyImg} alt="" className="h-10 w-50 object-cover" />
-        <div className="flex gap-5">
-          <button className="box-border px-5 py-2 rounded-md font-medium inset-ring-2 inset-ring-yellow-500 cursor-pointer hover:bg-linear-65 from-orange-500 to-yellow-200 hover:border-transparent">
-            Contact
-          </button>
-          <button className="bg-linear-65 from-orange-500 to-yellow-200 px-5 py-2 rounded-md font-medium text-black cursor-pointer transition-all duration-300 hover:from-orange-400 hover:to-yellow-200">
-            Book demo
-          </button>
+    <nav className="bg-black w-full">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo/Brand */}
+          <div className="flex-shrink-0">
+            <span className="text-white text-xl font-semibold">Legally Ai</span>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="flex space-x-8">
+            <a href="#" className="text-white hover:text-gray-300 px-3 py-2">
+              Home
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 px-3 py-2">
+              About
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 px-3 py-2">
+              Services
+            </a>
+            <a href="#" className="text-white hover:text-gray-300 px-3 py-2">
+              Contact
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
